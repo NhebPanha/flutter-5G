@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
   @override
@@ -21,7 +22,29 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         actions: [
-          Icon(Icons.settings, size: 30, color: Colors.white),
+          Container(
+            width: 35,
+            height: 35,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  "https://i.pinimg.com/1200x/b5/eb/cb/b5ebcb3f2d0763ed5df606485406c97f.jpg",
+                ),
+                fit: BoxFit.cover,
+              ),
+              color: Color.fromARGB(255, 42, 42, 42),
+              borderRadius: BorderRadius.circular(50),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color.fromARGB(255, 255, 77, 77),
+                  blurRadius: 10,
+                  spreadRadius: 0.2,
+                  offset: Offset(0, 1),
+                ),
+              ],
+              border: Border.all(color: Colors.white, width: 1),
+            ),
+          ),
           SizedBox(width: 20),
           Icon(Icons.notifications_active, size: 30, color: Colors.white),
           SizedBox(width: 20),
@@ -82,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
 
-              /// avatar container 1
+              /// avatar container 3
               Container(
                 margin: EdgeInsets.all(20),
                 width: 60,
@@ -107,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
 
-              /// avatar container 1
+              /// avatar container 4
               Container(
                 margin: EdgeInsets.all(20),
                 width: 60,
