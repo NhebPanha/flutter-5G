@@ -10,9 +10,74 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //// bloc drawer show from left side
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+        child: Column(
+          children: [
+            /// background image
+            Container(
+              width: double.infinity,
+              height: 200,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://i.pinimg.com/1200x/95/5b/43/955b437d7a0a91f60b944abf6a99a544.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+
+            /// list acount
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text("Acount"),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+            /// list settings
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text("Settings"),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+            /// list history
+            ListTile(
+              leading: Icon(Icons.history),
+              title: Text("History"),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+            /// list notifications
+            ListTile(
+              leading: Icon(Icons.notifications),
+              title: Text("Notifications"),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+            /// list language
+            ListTile(
+              leading: Icon(Icons.language),
+              title: Text("language"),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+
+            /// list logout
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text("Logout"),
+              trailing: Icon(Icons.arrow_drop_down),
+            ),
+          ],
+        ),
+      ),
+
+      /// bloc app bar
       appBar: AppBar(
         backgroundColor: Colors.red,
-        leading: Icon(Icons.menu, size: 30, color: Colors.white),
+        // leading: Icon(Icons.menu, size: 30, color: Colors.white),
         title: Text(
           "MOBILE DEVELOPER",
           style: TextStyle(
@@ -50,6 +115,8 @@ class _HomePageState extends State<HomePage> {
           SizedBox(width: 20),
         ],
       ),
+
+      /// bloc body
       body: SingleChildScrollView(
         child: Column(
           children: [
