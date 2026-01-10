@@ -50,188 +50,244 @@ class _HomePageState extends State<HomePage> {
           SizedBox(width: 20),
         ],
       ),
-      body: Column(
-        children: [
-          /// row 1
-          Row(
-            children: [
-              /// avatar container 1
-              Container(
-                margin: EdgeInsets.all(20),
-                width: 60,
-                height: 60,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://i.pinimg.com/1200x/bb/00/fb/bb00fbabd0a58d0bc918cb8bd5664837.jpg",
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            /// row 1
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  /// avatar container 1
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://i.pinimg.com/1200x/bb/00/fb/bb00fbabd0a58d0bc918cb8bd5664837.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                      color: Color.fromARGB(255, 42, 42, 42),
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color.fromARGB(255, 255, 77, 77),
+                          blurRadius: 10,
+                          spreadRadius: 0.2,
+                          offset: Offset(0, 1),
+                        ),
+                      ],
                     ),
-                    fit: BoxFit.cover,
                   ),
-                  color: Color.fromARGB(255, 42, 42, 42),
-                  borderRadius: BorderRadius.circular(50),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(255, 255, 77, 77),
-                      blurRadius: 10,
-                      spreadRadius: 0.2,
-                      offset: Offset(0, 1),
-                    ),
-                  ],
-                ),
-              ),
 
-              /// avatar container 2
-              Container(
-                margin: EdgeInsets.all(20),
-                width: 60,
-                height: 60,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://i.pinimg.com/736x/47/7e/ee/477eee2362bc01bc984b7987f7134b2e.jpg",
+                  /// avatar container 2
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://i.pinimg.com/736x/47/7e/ee/477eee2362bc01bc984b7987f7134b2e.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                      color: Color.fromARGB(255, 42, 42, 42),
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color.fromARGB(255, 255, 77, 77),
+                          blurRadius: 10,
+                          spreadRadius: 0.2,
+                          offset: Offset(0, 1),
+                        ),
+                      ],
                     ),
-                    fit: BoxFit.cover,
                   ),
-                  color: Color.fromARGB(255, 42, 42, 42),
-                  borderRadius: BorderRadius.circular(50),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(255, 255, 77, 77),
-                      blurRadius: 10,
-                      spreadRadius: 0.2,
-                      offset: Offset(0, 1),
-                    ),
-                  ],
-                ),
-              ),
 
-              /// avatar container 3
-              Container(
-                margin: EdgeInsets.all(20),
-                width: 60,
-                height: 60,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://i.pinimg.com/736x/4a/20/dd/4a20ddadf33f9226ffa2a14dc29fff68.jpg",
+                  /// avatar container 3
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://i.pinimg.com/736x/4a/20/dd/4a20ddadf33f9226ffa2a14dc29fff68.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                      color: Color.fromARGB(255, 42, 42, 42),
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color.fromARGB(255, 255, 77, 77),
+                          blurRadius: 10,
+                          spreadRadius: 0.2,
+                          offset: Offset(0, 1),
+                        ),
+                      ],
                     ),
-                    fit: BoxFit.cover,
                   ),
-                  color: Color.fromARGB(255, 42, 42, 42),
-                  borderRadius: BorderRadius.circular(50),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(255, 255, 77, 77),
-                      blurRadius: 10,
-                      spreadRadius: 0.2,
-                      offset: Offset(0, 1),
-                    ),
-                  ],
-                ),
-              ),
 
-              /// avatar container 4
-              Container(
-                margin: EdgeInsets.all(20),
-                width: 60,
-                height: 60,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://i.pinimg.com/1200x/b5/eb/cb/b5ebcb3f2d0763ed5df606485406c97f.jpg",
+                  /// avatar container 4
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://i.pinimg.com/1200x/b5/eb/cb/b5ebcb3f2d0763ed5df606485406c97f.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                      color: Color.fromARGB(255, 42, 42, 42),
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color.fromARGB(255, 255, 77, 77),
+                          blurRadius: 10,
+                          spreadRadius: 0.2,
+                          offset: Offset(0, 1),
+                        ),
+                      ],
                     ),
-                    fit: BoxFit.cover,
                   ),
-                  color: Color.fromARGB(255, 42, 42, 42),
-                  borderRadius: BorderRadius.circular(50),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color.fromARGB(255, 255, 77, 77),
-                      blurRadius: 10,
-                      spreadRadius: 0.2,
-                      offset: Offset(0, 1),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
 
-          /// container 1
-          Container(
-            margin: EdgeInsets.all(20),
-            width: double.infinity,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage(
-                  "https://i.pinimg.com/1200x/5d/0a/78/5d0a78550a05a4c10aef4a3a7cf15b95.jpg",
-                ),
-                fit: BoxFit.cover,
+                  /// avatar container 5
+                  Container(
+                    margin: EdgeInsets.all(20),
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                          "https://i.pinimg.com/1200x/b5/eb/cb/b5ebcb3f2d0763ed5df606485406c97f.jpg",
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                      color: Color.fromARGB(255, 42, 42, 42),
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color.fromARGB(255, 255, 77, 77),
+                          blurRadius: 10,
+                          spreadRadius: 0.2,
+                          offset: Offset(0, 1),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-              color: Color.fromARGB(255, 42, 42, 42),
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(
-                  color: const Color.fromARGB(255, 255, 77, 77),
-                  blurRadius: 10,
-                  spreadRadius: 0.2,
-                  offset: Offset(0, 1),
-                ),
-              ],
             ),
-            height: 200,
-          ),
 
-          /// container 2
-          Container(
-            margin: EdgeInsets.all(20),
-            width: double.infinity,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage(
-                  "https://i.pinimg.com/1200x/f2/6e/27/f26e2770b056eae57427549fa9199130.jpg",
+            /// container 1
+            Container(
+              margin: EdgeInsets.all(20),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://i.pinimg.com/1200x/5d/0a/78/5d0a78550a05a4c10aef4a3a7cf15b95.jpg",
+                  ),
+                  fit: BoxFit.cover,
                 ),
-                fit: BoxFit.cover,
+                color: Color.fromARGB(255, 42, 42, 42),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color.fromARGB(255, 255, 77, 77),
+                    blurRadius: 10,
+                    spreadRadius: 0.2,
+                    offset: Offset(0, 1),
+                  ),
+                ],
               ),
-              color: Color.fromARGB(255, 42, 42, 42),
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(
-                  color: const Color.fromARGB(255, 255, 77, 77),
-                  blurRadius: 10,
-                  spreadRadius: 0.2,
-                  offset: Offset(0, 1),
-                ),
-              ],
+              height: 200,
             ),
-            height: 200,
-          ),
 
-          /// container 3
-          Container(
-            margin: EdgeInsets.all(20),
-            width: double.infinity,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: NetworkImage(
-                  "https://i.pinimg.com/736x/a2/b7/e1/a2b7e149be8a90b87a03c5455308a16d.jpg",
+            /// container 2
+            Container(
+              margin: EdgeInsets.all(20),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://i.pinimg.com/1200x/f2/6e/27/f26e2770b056eae57427549fa9199130.jpg",
+                  ),
+                  fit: BoxFit.cover,
                 ),
-                fit: BoxFit.cover,
+                color: Color.fromARGB(255, 42, 42, 42),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color.fromARGB(255, 255, 77, 77),
+                    blurRadius: 10,
+                    spreadRadius: 0.2,
+                    offset: Offset(0, 1),
+                  ),
+                ],
               ),
-              color: Color.fromARGB(255, 42, 42, 42),
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(
-                  color: const Color.fromARGB(255, 255, 77, 77),
-                  blurRadius: 10,
-                  spreadRadius: 0.2,
-                  offset: Offset(0, 1),
-                ),
-              ],
+              height: 200,
             ),
-            height: 200,
-          ),
-        ],
+
+            /// container 3
+            Container(
+              margin: EdgeInsets.all(20),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://i.pinimg.com/736x/a2/b7/e1/a2b7e149be8a90b87a03c5455308a16d.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                ),
+                color: Color.fromARGB(255, 42, 42, 42),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color.fromARGB(255, 255, 77, 77),
+                    blurRadius: 10,
+                    spreadRadius: 0.2,
+                    offset: Offset(0, 1),
+                  ),
+                ],
+              ),
+              height: 200,
+            ),
+
+            /// container 3
+            Container(
+              margin: EdgeInsets.all(20),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    "https://i.pinimg.com/736x/a2/b7/e1/a2b7e149be8a90b87a03c5455308a16d.jpg",
+                  ),
+                  fit: BoxFit.cover,
+                ),
+                color: Color.fromARGB(255, 42, 42, 42),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color.fromARGB(255, 255, 77, 77),
+                    blurRadius: 10,
+                    spreadRadius: 0.2,
+                    offset: Offset(0, 1),
+                  ),
+                ],
+              ),
+              height: 200,
+            ),
+          ],
+        ),
       ),
     );
   }
