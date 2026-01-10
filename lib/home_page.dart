@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -355,6 +356,39 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+      ),
+
+      /// bloc floating action button
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red,
+        onPressed: () {
+          /// event click
+          log("message: Floating Action Button Clicked");
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              duration: Duration(seconds: 2),
+              backgroundColor: const Color(0x2C424242),
+              content: Text("Floating Action Button Clicked"),
+            ),
+          );
+        },
+        child: Icon(Icons.add, size: 30, color: Colors.white),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home, size: 30, color: Colors.red),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search, size: 30, color: Colors.red),
+            label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person, size: 30, color: Colors.red),
+            label: "Acount",
+          ),
+        ],
       ),
     );
   }
