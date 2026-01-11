@@ -1,5 +1,6 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -33,7 +34,10 @@ class _HomePageState extends State<HomePage> {
             /// list acount
             ListTile(
               leading: Icon(Icons.person),
-              title: Text("Acount"),
+              title: Text(
+                "គណនីរបស់ខ្ញុំ",
+                style: TextStyle(fontFamily: 'bokor'),
+              ),
               trailing: Icon(Icons.arrow_drop_down),
             ),
 
@@ -85,6 +89,7 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
             fontSize: 22,
             fontWeight: FontWeight.w700,
+            fontFamily: 'dynapuff',
           ),
         ),
         actions: [
@@ -112,7 +117,14 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           SizedBox(width: 20),
-          Icon(Icons.notifications_active, size: 30, color: Colors.white),
+          Container(
+            width: 50,
+            height: 50,
+            child: SvgPicture.asset(
+              'assets/icons/Vector.svg',
+              color: Colors.black,
+            ),
+          ),
           SizedBox(width: 20),
         ],
       ),
@@ -336,9 +348,7 @@ class _HomePageState extends State<HomePage> {
               width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                    "https://i.pinimg.com/736x/a2/b7/e1/a2b7e149be8a90b87a03c5455308a16d.jpg",
-                  ),
+                  image: AssetImage("asset/image/image3.jpg"),
                   fit: BoxFit.cover,
                 ),
                 color: Color.fromARGB(255, 42, 42, 42),
